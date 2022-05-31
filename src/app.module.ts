@@ -29,10 +29,7 @@ import { Schedule } from "./schedule/schedule.model";
         username: process.env.POSTGRES_USER,
         password: process.env.POSTGRES_PASSWORD,
         database: process.env.POSTGRES_DB,
-        dialectOptions: { 
-            ssl: true,
-            native: true
-        },
+        dialectOptions: {},
         models: [User, Role, UserRoles, Schedule],
         autoLoadModels: true
       }),
